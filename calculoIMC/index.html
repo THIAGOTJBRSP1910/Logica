@@ -8,21 +8,21 @@
     <title>Cálculo do IMC</title>
 </head>
 
-<body bgcolor="8EE5EE">
+<body bgcolor="F8F8FF">
     <h1>Calculo do IMC</h1>
     <form name="frmMedia">
-        <p><input type="text" placeholder="Peso" name="txtPeso"></p>
         <p><input type="text" placeholder="Altura" name="txtAltura"></p>
+        <p><input type="text" placeholder="Peso" name="txtPeso"></p>
         <p>
-            <input type="button" value="calcular" onclick="calcularIMC()">
+            <input type="button" value="Calcular" onclick="calcularIMC()">
             <input type="reset" value="Limpar">
         </p>
-        <p><input type="text" placeholder="Resultado" name="txtResultado">
-        <p><input type="text" placeholder="Status" name="txtStatus">   
-        <p><img src="imagens/t.png" width="500px" height="300px">    
+        <p><input type="text" placeholder="Resultado" name="txtResultado" disabled>
+            <input type="text" disabled name="txtStatus">
+           <p><img src="imc.jpg" id="Imc"></p>
         </p>
     </form>
-    <!-- Link com o documento JS -->
+    <!-- Link com o Documento JS -->
     <script src="IMC.js"></script>
 </body>
 
